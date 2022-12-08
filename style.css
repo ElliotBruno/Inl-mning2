@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(128, 149, 193, 0.744);
+}
+div {
+  padding: 20px;
+}
+
+.meny {
+  width: 100%;
+  background-color: whitesmoke;
+  border-width: 100%;
+}
