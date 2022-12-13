@@ -1,10 +1,13 @@
 body {
-  background-color: rgba(128, 149, 193, 0.744);
+  background-color: rgba(109, 137, 207, 0.744);
 }
 div {
-  padding: 20px;
+  padding: 3px;
 }
-
+h1 {
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 .meny {
   width: 100%;
   background-color: whitesmoke;
