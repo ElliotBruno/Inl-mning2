@@ -19,8 +19,9 @@ nav {
   display: flex;
 }
 a {
-  font-size: xx-large;
+  font-size: large;
   position: static;
+  display: -webkit-inline-box;
 }
 p {
   font-size: larger;
@@ -44,4 +45,16 @@ h4 {
 h5 {
   margin-left: 200px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.img {
+  display: -webkit-inline-flex;
+}
+.div2 {
+  margin: 0px;
+}
+.div3 {
+  margin: 0px;
+}
+.img2 {
+  display: -webkit-inline-flex;
 }
