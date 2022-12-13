@@ -2,7 +2,7 @@ body {
   background-color: rgba(109, 137, 207, 0.744);
 }
 div {
-  padding: 3px;
+  padding: 1px;
 }
 h1 {
   font-size: x-large;
@@ -12,4 +12,36 @@ h1 {
   width: 100%;
   background-color: whitesmoke;
   border-width: 100%;
+  display: flex;
+  list-style: none;
+}
+nav {
+  display: flex;
+}
+a {
+  font-size: xx-large;
+  position: static;
+}
+p {
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  position: -webkit-sticky;
+  right: 200px;
+  nav-right: root;
+  margin-left: 150px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h3 {
+  margin-left: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h4 {
+  margin-left: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h5 {
+  margin-left: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
