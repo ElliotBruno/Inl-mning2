@@ -103,10 +103,13 @@ h5 {
   }
 }
 @media screen and (max-width: 820px) {
-  body {
-    overflow-y: auto;
+  .img2 {
+    flex-wrap: wrap;
+    font-size: xx-large;
+    font-weight: 400;
+    flex-direction: column;
   }
-  meny {
-    border-width: 200%;
+  header {
+    border-width: 820px;
   }
 }
