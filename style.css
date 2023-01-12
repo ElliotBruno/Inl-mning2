@@ -8,13 +8,16 @@ h1 {
   font-size: x-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.meny {
+header {
   width: 100%;
   background-color: whitesmoke;
   border-width: 100%;
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  text-decoration: none;
 }
+
 nav {
   display: flex;
 }
@@ -33,16 +36,27 @@ h2 {
   nav-right: root;
   margin-left: 150px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
 }
-h3 {
-  margin-left: 200px;
+.menu-item {
+  margin: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-h4 {
-  margin-left: 200px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+input[type="text"],
+input[type="password"] {
+  border-color: darkslateblue;
+  border-radius: 10px;
 }
-h5 {
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+h7 {
+  margin-top: 22px;
+  margin-left: 100px;
+}
+h6 {
   margin-left: 300px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
