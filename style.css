@@ -1,43 +1,63 @@
 body {
-  background-color: rgba(109, 137, 207, 0.744);
-}
-div {
-  padding: 1px;
+  background-image: url("44ebc3095a5deba2973f0e5fd3fb92b5.gif");
+  background-repeat: none;
+  background-size: 100%;
 }
 h1 {
   font-size: x-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-header {
-  width: 100%;
-  background-color: whitesmoke;
-  border-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  text-decoration: none;
+.home {
+  padding-top: 20px;
+  padding-right: 30px;
 }
 
-nav {
-  display: flex;
+header:hover {
+  transition: 2s;
+  color: darkred;
 }
+
+.menu-item:hover {
+  color: blue;
+  transition: 2s;
+}
+a:hover {
+  transition: 2s;
+  color: green;
+  @keyframes mymove {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 200px;
+    }
+  }
+}
+header {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(32, 25, 184, 0.863649683506215) 0%,
+    rgba(167, 30, 54, 1) 46%,
+    rgba(122, 87, 13, 1) 63%,
+    rgba(8, 103, 43, 1) 84%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+}
+
 a {
   font-size: large;
-  position: static;
   display: -webkit-inline-box;
+  text-decoration: none;
+  color: darkred;
 }
 p {
   font-size: larger;
   font-family: "Times New Roman", Times, serif;
 }
-h2 {
-  position: -webkit-sticky;
-  right: 200px;
-  nav-right: root;
-  margin-left: 150px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration: none;
-}
+
 .menu-item {
   margin: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -45,38 +65,24 @@ h2 {
 input[type="text"],
 input[type="password"] {
   border-color: darkslateblue;
-  border-radius: 10px;
+  border-block-width: 10px;
+  border-radius: 50px;
+  font-size: large;
 }
 
 label {
   display: inline-block;
   width: 100px;
 }
-h7 {
-  margin-top: 22px;
-  margin-left: 100px;
-}
-h6 {
-  margin-left: 300px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+
 .img {
   display: -webkit-inline-flex;
 }
-.div2 {
-  margin: 0px;
-}
-.div3 {
-  margin: 0px;
-}
+
 .img2 {
   display: -webkit-inline-flex;
 }
-.house3 {
-  position: -webkit-sticky;
-  margin-top: -365px;
-  margin-left: 418px;
-}
+
 .jets1 {
   display: inline-flex;
 }
@@ -87,37 +93,37 @@ h6 {
   display: flex;
 }
 .divmain {
-  margin-top: 100px;
-  margin-left: 800px;
+  margin-top: 124px;
+  margin-left: 870px;
 }
 .divmain2 {
-  margin-left: 300px;
-  margin-top: -400px;
-  border-right-width: 50%;
+  margin-left: 350px;
+  margin-top: -530px;
 }
 .divmain2:hover {
-  padding: 150px;
-  margin: 150px;
-  border-radius: 200%;
-  transition: all 10s;
+  padding: 170px;
+  margin: 170px;
+  border-radius: 100%;
+  transition: all 7s;
 }
+
 .divmain3 {
-  margin-top: -400px;
+  margin-top: -220px;
   margin-left: -20px;
 }
 .divmain3:hover {
-  padding: 150px;
-  margin: 150px;
-  border-radius: 250%;
-  transition: all 12s;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 100%;
+  transition: all 7s;
 }
-@media screen and (max-width: 390px) {
-  body {
-    overflow-y: visible;
-  }
-}
+
 @media screen and (max-width: 820px) {
-  .img2 {
+  .img2,
+  .img,
+  .jets1,
+  .jets2,
+  .jets3 {
     flex-wrap: wrap;
     font-size: xx-large;
     font-weight: 400;
@@ -125,5 +131,17 @@ h6 {
   }
   header {
     border-width: 820px;
+    flex-direction: column;
+  }
+}
+.namn {
+  font-size: large;
+}
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
   }
 }
