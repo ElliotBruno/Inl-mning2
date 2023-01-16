@@ -158,6 +158,9 @@ label {
   .divmain {
     display: none;
   }
+  .båt {
+    display: none;
+  }
 }
 .namn {
   font-size: large;
