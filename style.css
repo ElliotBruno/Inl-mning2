@@ -1,7 +1,8 @@
 body {
   background-image: url("44ebc3095a5deba2973f0e5fd3fb92b5.gif");
-  background-repeat: none;
   background-size: 100%;
+  overflow-x: hidden;
+  background-size: cover;
 }
 h1 {
   font-size: x-large;
@@ -19,11 +20,13 @@ header:hover {
 
 .menu-item:hover {
   color: blue;
+  font-size: x-large;
   transition: 2s;
 }
 a:hover {
-  transition: 2s;
+  transition: all 2s;
   color: green;
+  font-size: x-large;
   @keyframes mymove {
     from {
       top: 0px;
@@ -97,25 +100,38 @@ label {
   margin-left: 870px;
 }
 .divmain2 {
-  margin-left: 350px;
-  margin-top: -530px;
+  margin-left: 800px;
+  margin-top: -72%;
+  background-image: url("sky-heaven.gif");
+  width: 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
 }
 .divmain2:hover {
-  padding: 170px;
-  margin: 170px;
-  border-radius: 100%;
-  transition: all 7s;
+  padding-top: 390px;
+  transition: all 3s;
 }
 
 .divmain3 {
-  margin-top: -220px;
-  margin-left: -20px;
+  padding-left: 900px;
+  margin-top: -20px;
+  background-image: url("2022-Oct-16-steveluvender-las-vegas-gifs-5.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-y: 40%;
 }
 .divmain3:hover {
-  padding: 50px;
-  margin: 50px;
-  border-radius: 100%;
-  transition: all 7s;
+  padding-left: 10px;
+  transition: all 4s ease;
+}
+.båt {
+  margin-top: -320px;
+}
+.båt:hover {
+  padding-left: 830px;
+  transition: all 4s ease;
 }
 
 @media screen and (max-width: 820px) {
@@ -125,13 +141,22 @@ label {
   .jets2,
   .jets3 {
     flex-wrap: wrap;
-    font-size: xx-large;
+    font-size: medium;
     font-weight: 400;
     flex-direction: column;
   }
   header {
     border-width: 820px;
     flex-direction: column;
+  }
+  .divmain2 {
+    display: none;
+  }
+  .divmain3 {
+    display: none;
+  }
+  .divmain {
+    display: none;
   }
 }
 .namn {
