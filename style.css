@@ -1,7 +1,6 @@
 body {
   background-image: url("44ebc3095a5deba2973f0e5fd3fb92b5.gif");
   background-size: 100%;
-  overflow-x: hidden;
   background-size: cover;
 }
 header {
@@ -43,7 +42,7 @@ h1 {
 }
 .menu-item {
   margin: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 .menu-item:hover {
   color: blue;
