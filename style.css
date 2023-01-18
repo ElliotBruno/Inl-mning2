@@ -4,39 +4,9 @@ body {
   overflow-x: hidden;
   background-size: cover;
 }
-h1 {
-  font-size: x-large;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-.home {
-  padding-top: 20px;
-  padding-right: 30px;
-}
-
-header:hover {
-  transition: 2s;
-  color: darkred;
-}
-
-.menu-item:hover {
-  color: blue;
-  font-size: x-large;
-  transition: 2s;
-}
-a:hover {
-  transition: all 2s;
-  color: green;
-  font-size: x-large;
-  @keyframes mymove {
-    from {
-      top: 0px;
-    }
-    to {
-      top: 200px;
-    }
-  }
-}
 header {
+  transition: 2s;
+
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -46,24 +16,61 @@ header {
     rgba(8, 103, 43, 1) 84%,
     rgba(2, 0, 36, 1) 100%
   );
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   display: flex;
   justify-content: space-between;
 }
-
+@keyframes my-animation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+header:hover {
+  color: darkred;
+}
+h1 {
+  font-size: x-large;
+  font-family: "Audiowide", sans-serif;
+}
+.home {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.menu-item {
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.menu-item:hover {
+  color: blue;
+  font-size: x-large;
+  transition: 2s;
+}
 a {
   font-size: large;
   display: -webkit-inline-box;
   text-decoration: none;
   color: darkred;
+  transition: all 2s;
 }
-p {
-  font-size: larger;
-  font-family: "Times New Roman", Times, serif;
+a:hover {
+  color: green;
+  font-size: x-large;
 }
-
-.menu-item {
-  margin: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.divmain {
+  margin-top: 124px;
+  margin-left: 870px;
+}
+.båt {
+  margin-top: -320px;
+  transition: all 4s ease;
+}
+.båt:hover {
+  padding-left: 830px;
 }
 input[type="text"],
 input[type="password"] {
@@ -72,48 +79,17 @@ input[type="password"] {
   border-radius: 50px;
   font-size: large;
 }
-
 label {
   display: inline-block;
   width: 100px;
 }
-
 .img {
   display: -webkit-inline-flex;
 }
-
 .img2 {
   display: -webkit-inline-flex;
 }
-
-.jets1 {
-  display: inline-flex;
-}
-.jets2 {
-  display: inline-flex;
-}
-.jets3 {
-  display: flex;
-}
-.divmain {
-  margin-top: 124px;
-  margin-left: 870px;
-}
 .divmain2 {
-  margin-left: 800px;
-  margin-top: -72%;
-  background-image: url("sky-heaven.gif");
-  width: 35%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: 30%;
-}
-.divmain2:hover {
-  padding-top: 390px;
-  transition: all 3s;
-}
-
-.divmain3 {
   padding-left: 900px;
   margin-top: -20px;
   background-image: url("2022-Oct-16-steveluvender-las-vegas-gifs-5.gif");
@@ -121,19 +97,24 @@ label {
   background-size: cover;
   background-position-y: center;
   background-position-y: 40%;
+  transition: all 4s ease;
+}
+.divmain2:hover {
+  padding-left: 10px;
+}
+.divmain3 {
+  margin-left: 800px;
+  margin-top: -86%;
+  background-image: url("sky-heaven.gif");
+  width: 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  transition: all 3s;
 }
 .divmain3:hover {
-  padding-left: 10px;
-  transition: all 4s ease;
+  padding-top: 480px;
 }
-.båt {
-  margin-top: -320px;
-}
-.båt:hover {
-  padding-left: 830px;
-  transition: all 4s ease;
-}
-
 @media screen and (max-width: 820px) {
   .img2,
   .img,
@@ -160,16 +141,5 @@ label {
   }
   .båt {
     display: none;
-  }
-}
-.namn {
-  font-size: large;
-}
-@keyframes mymove {
-  from {
-    top: 0px;
-  }
-  to {
-    top: 200px;
   }
 }
