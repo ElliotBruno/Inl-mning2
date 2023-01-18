@@ -2,6 +2,7 @@ body {
   background-image: url("44ebc3095a5deba2973f0e5fd3fb92b5.gif");
   background-size: 100%;
   background-size: cover;
+  overflow-x: hidden;
 }
 header {
   transition: 2s;
@@ -49,6 +50,11 @@ h1 {
   font-size: x-large;
   transition: 2s;
 }
+.Om_oss {
+  font-size: small;
+  width: 30%;
+  margin-left: -50px;
+}
 a {
   font-size: large;
   display: -webkit-inline-box;
@@ -61,11 +67,11 @@ a:hover {
   font-size: x-large;
 }
 .divmain {
-  margin-top: 124px;
+  margin-top: -100px;
   margin-left: 870px;
 }
 .båt {
-  margin-top: -320px;
+  margin-top: -330px;
   transition: all 4s ease;
 }
 .båt:hover {
@@ -124,6 +130,9 @@ label {
     font-size: medium;
     font-weight: 400;
     flex-direction: column;
+  }
+  .Om_oss {
+    font-size: xx-small;
   }
   header {
     border-width: 820px;
